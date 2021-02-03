@@ -1,14 +1,14 @@
 <script>
 	export let name;
-	let userName = 'user';
-	setTimeout(()=>{
-		userName = 'Daniel'
-	}, 10000);
+	let userName = 'Daniel';
+	import Counter from './Counter.svelte';
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	<h2>Welcome {userName}</h2>
+	<h2>Welcome {userName} to Svelte</h2>
+	<Counter counter=2/>
+	<Counter counter=3/>
 </main>
 
 <style>
