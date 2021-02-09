@@ -2,13 +2,15 @@
 	export let name;
 	let userName = 'Daniel';
 	import Counter from './Counter.svelte';
+	import Form from './Form.svelte';
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<h2>Welcome {userName} to Svelte</h2>
-	<Counter counter=2/>
-	<Counter counter=3/>
+	<Counter counter={2}/>
+	<Counter counter={10}/>
+	<Form />
 </main>
 
 <style>
